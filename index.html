@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Déjà Vu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #07090f; /* Deep obsidian */
+            --text-main: #ffffff;
+            --text-muted: rgba(255, 255, 255, 0.7);
+            --gold-light: #ffeba3;
+            --gold-main: #dfa85f;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --glow-color: rgba(223, 168, 95, 0.15);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(90, 45, 130, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 85% 30%, var(--glow-color) 0%, transparent 50%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .header-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-main));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 0 16px 0;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(223, 168, 95, 0.1);
+            color: var(--gold-main);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border: 1px solid rgba(223, 168, 95, 0.2);
+        }
+
+        .policy-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 24px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.8s ease-out backwards;
+        }
+
+        .policy-section:hover {
+            transform: translateY(-2px);
+            border-color: rgba(223, 168, 95, 0.3);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2), 0 0 20px var(--glow-color);
+        }
+
+        .policy-section:nth-child(2) { animation-delay: 0.1s; }
+        .policy-section:nth-child(3) { animation-delay: 0.2s; }
+        .policy-section:nth-child(4) { animation-delay: 0.3s; }
+        .policy-section:nth-child(5) { animation-delay: 0.4s; }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .section-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-main));
+            color: var(--bg-color);
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0;
+            color: #fff;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin: 0 0 16px 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            color: var(--text-muted);
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+        
+        li::marker {
+            color: var(--gold-main);
+        }
+
+        strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .contact-box {
+            display: inline-block;
+            margin-top: 16px;
+            padding: 12px 24px;
+            background: rgba(223, 168, 95, 0.1);
+            border-radius: 12px;
+            color: var(--gold-light);
+            font-weight: 500;
+            text-decoration: none;
+            transition: background 0.2s ease;
+        }
+
+        .contact-box:hover {
+            background: rgba(223, 168, 95, 0.2);
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 40px 20px; }
+            .policy-section { padding: 24px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="header-icon">🛡️</div>
+        <h1>Política de Privacidad</h1>
+        <div class="date-badge">Actualizado: 24 Julio 2026</div>
+        <p class="subtitle">En <strong>Déjà Vu</strong> nos tomamos muy en serio la privacidad de tus recuerdos y datos personales. Esta política de privacidad explica cómo gestionamos la información dentro de la aplicación.</p>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header">
+            <div class="section-number">1</div>
+            <h2>Procesamiento 100% Local</h2>
+        </div>
+        <p>Déjà Vu utiliza el marco de trabajo oficial de Apple (PhotoKit) únicamente para buscar y seleccionar recuerdos fotográficos de años anteriores. <strong>Todo el procesamiento se realiza de forma 100% local en tu dispositivo (iPhone/iPad)</strong>.</p>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header">
+            <div class="section-number">2</div>
+            <h2>Sin Recopilación de Datos</h2>
+        </div>
+        <ul>
+            <li><strong>Sin servidores externos:</strong> Déjà Vu no almacena, transmite ni sube tus fotos, vídeos ni metadatos (como ubicación o fechas) a ningún servidor.</li>
+            <li><strong>Sin rastreo:</strong> No utilizamos herramientas de análisis de terceros, telemetría ni redes publicitarias.</li>
+            <li><strong>Sin cuentas de usuario:</strong> No requerimos registro ni creamos ningún perfil de usuario.</li>
+        </ul>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header">
+            <div class="section-number">3</div>
+            <h2>Permisos de la Biblioteca de Fotos</h2>
+        </div>
+        <p>La aplicación solicita acceso a tu biblioteca de fotos exclusivamente para poder seleccionar y mostrarte recuerdos diarios en la aplicación y en tus widgets de la pantalla de inicio.</p>
+    </div>
+
+    <div class="policy-section">
+        <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>Contacto</h2>
+        </div>
+        <p>Si tienes alguna duda o pregunta sobre esta política de privacidad, puedes ponerte en contacto con nosotros en cualquier momento.</p>
+        <a href="mailto:dani@easy-run.app" class="contact-box">📧 dani@easy-run.app</a>
+    </div>
+</div>
+
+</body>
+</html>
